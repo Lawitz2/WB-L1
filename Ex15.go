@@ -1,24 +1,26 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 var justString string
 
 func createHugeString(n int) string {
 	var box string
 	for i := 0; i < n; i++ {
-		box += "большая строка"
+		box += "большая строка 😁 "
 	}
 	return box
 }
 
 func someFunc() {
-	v := createHugeString(1 << 10)
-	length := 14
+	v := []rune(createHugeString(1 << 10))
+	length := 23
 	//justString = v[:100]
-	box := []rune(v)
-	box = box[:min(len(box), length)]
-	justString = string(box)
+	justString = strings.Clone(string(v[:min(len(v), length)]))
+
 }
 
 func Ex15() {
