@@ -24,7 +24,7 @@ func routine1(stopChannel chan struct{}, wg *sync.WaitGroup) {
 func routine2(stop *bool, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for !*stop {
-		//jobs
+		// jobs
 		time.Sleep(time.Second)
 	}
 	fmt.Println("i am routine 2, i am stopping because someone swapped my bool flag")
@@ -34,7 +34,7 @@ func routine2(stop *bool, wg *sync.WaitGroup) {
 func routine3(jobs chan any, wg *sync.WaitGroup) {
 	defer wg.Done()
 	for range jobs {
-		//jobs
+		// jobs
 		time.Sleep(time.Second)
 	}
 	fmt.Println("i am routine 3, i am stopping because someone closed the channel that i was getting my jobs from")
@@ -62,6 +62,7 @@ func routine5(wg *sync.WaitGroup) {
 	return
 }
 
+// пример разных способов завершения горутин
 func Ex6() {
 	stopSignalChannel := make(chan struct{})                   //1
 	stop := false                                              //2

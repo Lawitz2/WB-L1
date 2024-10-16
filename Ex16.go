@@ -29,6 +29,7 @@ func partition(arr []int, low, high int) ([]int, int) {
 	return arr, i
 }
 
+// реализация quicksort
 func Ex16() {
 	arr := []int{9, 9, 5, 6, 4, 2, 1}
 	arr = QuickSortStart(arr)

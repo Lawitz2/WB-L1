@@ -15,6 +15,7 @@ func createHugeString(n int) string {
 	return box
 }
 
+// функция, позволяющая взять часть большой строки и не держать большую строку в памяти
 func someFunc() {
 	v := []rune(createHugeString(1 << 10))
 	length := 23

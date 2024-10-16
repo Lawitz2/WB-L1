@@ -17,6 +17,7 @@ func checkUniq(str string) bool {
 	return true
 }
 
+// уникальные символы
 func Ex26() {
 	box := "string"
 	box2 := "stringS"

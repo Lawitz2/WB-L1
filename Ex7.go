@@ -22,6 +22,7 @@ func workerEx7(ctx context.Context, lock *sync.Mutex, index int, counter map[int
 	}
 }
 
+// реализация конкурентного доступа к мапе, завершающаяся через заданное время
 func Ex7() {
 	counter := make(map[int]int)
 	lock := &sync.Mutex{}

@@ -8,6 +8,7 @@ import (
 	"time"
 )
 
+// программа, выполняющая работу определенное количество времени
 func Ex5() {
 	var seconds int
 	fmt.Printf("seconds to work: ")

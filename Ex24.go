@@ -18,6 +18,7 @@ func distance(a *point, b *point) float64 {
 	return math.Sqrt(math.Pow(b.X-a.X, 2) + (math.Pow(b.Y-a.Y, 2)))
 }
 
+// вычислени расстояния между двумя точками на 2д-пространстве
 func Ex24() {
 	a := newPoint(2, 2)
 	b := newPoint(0, 0)

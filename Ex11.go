@@ -5,6 +5,8 @@ import (
 	"math/rand"
 )
 
+// данная программа находит элементы, содержащиеся в обоих слайсах
+// и выносит их в новый слайс
 func Ex11() {
 	var arr1, arr2 []int
 	intersection := make(map[int]bool)

@@ -28,6 +28,7 @@ func printout(wg *sync.WaitGroup, out chan int) { // я получаю данн�
 	}
 }
 
+// базовый пример пайплайна
 func Ex9() {
 	wg := &sync.WaitGroup{}
 

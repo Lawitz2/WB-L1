@@ -6,6 +6,7 @@ import (
 	"math/big"
 )
 
+// работа с большими числами (вне пределов int64)
 func Ex22() {
 	base := 2.0
 	power := 62.0
@@ -20,5 +21,4 @@ func Ex22() {
 	sub := big.NewInt(0)
 	sub.Sub(a, b)
 	fmt.Printf("a: %d, b: %d\na*b: %d\na/b: %d\na+b: %d\na-b: %d", a, b, mul, div, add, sub)
-
 }

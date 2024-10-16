@@ -5,6 +5,7 @@ import (
 	"log/slog"
 )
 
+// операции с битами
 func Ex8() {
 	var bigint int64
 	var bitpos, bit int
